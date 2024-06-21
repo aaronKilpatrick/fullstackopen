@@ -1,25 +1,16 @@
 import { useState } from 'react';
 
-const Button = ({handleClick, text}) => {
-  return (
-    <button onClick={handleClick}>
-      {text}
-    </button>
-  )
-}
+import Note from './components/Note';
 
-const App = () => {
-  const [value, setValue] = useState(10);
-
-  const setToValue = (value) => {
-    setValue(value);
-  }
-
-
+const App = ({ notes }) => {
   return (
     <div>
-      {value}
-      <Button handleClick={() => setToValue(50)} text='50' />
+      <h1>Notes</h1>
+      <ul>
+        {notes.map((note) => 
+          <Note key={note.id} content={note.content} />
+        )}
+      </ul>
     </div>
   );
 };
