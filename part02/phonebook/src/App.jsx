@@ -1,20 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import PersonForm from './components/PersonForm';
 import ContactListing from './components/ContactList';
 import Filter from './components/Filter';
 import Heading from './components/Heading';
 
 const App = () => {
-  const [people, setPeople] = useState([
-    { name: 'Arto Hellas', number: '040123456', id: 1 },
-    { name: 'Ada Lovelace', number: '39445323523', id: 2 },
-    { name: 'Dan Abramov', number: '1243234345', id: 3 },
-    { name: 'Mary Poppendieck', number: '39236423122', id: 4 },
-  ]);
+  const [people, setPeople] = useState([]);
   const [newName, setNewName] = useState('');
   const [newNumber, setNewNumber] = useState('');
   const [filter, setFilter] = useState('');
-  const [filteredPeople, setFilteredPeople] = useState(people);
+  const [filteredPeople, setFilteredPeople] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:3001/persons')
+      .then((response) => {
+        setPeople(response.data);
+        setFilteredPeople(response.data);
+      });
+  }, []);
   
   const checkUniqueName = () => {
     return people.find((person) => person.name === newName);
