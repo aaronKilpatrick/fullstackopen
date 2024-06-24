@@ -18,4 +18,5 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  'react/no-unused-vars': false,
 }
