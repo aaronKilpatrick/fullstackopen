@@ -9,12 +9,13 @@ const App = () => {
 
   useEffect(() => {
     console.log('effect');
+    //prettier-ignore
     axios
-      .get('http://localhost:3001/notes')
-      .then(response => {
-        console.log('promise fulfilled')
-        setNotes(response.data)
-      })
+    .get('http://localhost:3001/notes')
+    .then(response => {
+        console.log('promise fulfilled');
+        setNotes(response.data);
+      });
   }, []);
 
   console.log('render', notes.length, 'notes');
@@ -46,12 +47,18 @@ const App = () => {
       </div>
       <ul>
         {notesToShow.map((note) => (
-          <Note key={note.id} content={note.content} />
+          <Note
+            key={note.id}
+            content={note.content}
+          />
         ))}
       </ul>
       <form onSubmit={addNote}>
-        <input value={newNote} onChange={handleNoteChange} />
-        <button type="submit">Save</button>
+        <input
+          value={newNote}
+          onChange={handleNoteChange}
+        />
+        <button type='submit'>Save</button>
       </form>
     </div>
   );

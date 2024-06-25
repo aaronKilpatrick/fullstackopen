@@ -10,17 +10,19 @@ const App = () => {
   const [newName, setNewName] = useState('');
   const [newNumber, setNewNumber] = useState('');
   const [filter, setFilter] = useState('');
-  const [filteredPeople, setFilteredPeople] = useState([]);
+  const filteredPeople = people.filter((person) =>
+    person.name.toLowerCase().includes(filter.toLocaleLowerCase()),
+  );
 
   useEffect(() => {
+    //prettier-ignore
     axios
       .get('http://localhost:3001/persons')
       .then((response) => {
         setPeople(response.data);
-        setFilteredPeople(response.data);
       });
   }, []);
-  
+
   const checkUniqueName = () => {
     return people.find((person) => person.name === newName);
   };
@@ -51,21 +53,15 @@ const App = () => {
   const handleNameChange = (event) => setNewName(event.target.value);
   const handleNumberChange = (event) => setNewNumber(event.target.value);
 
-  const handleFilterChange = (event) => {
-    setFilter(event.target.value);
-
-    const regex = new RegExp(filter, 'i');
-    setFilteredPeople(() => people.filter(person => person.name.match(regex)));
-  };
-
   return (
     <div>
-      <Heading heading="Phonebook" />
+      <Heading heading='Phonebook' />
+      <Filter
+        filter={filter}
+        setFilter={setFilter}
+      />
       <div>
-        <Filter handleFilterChange={handleFilterChange} />
-      </div>
-      <div>
-        <Heading heading="add a new contact" />
+        <Heading heading='add a new contact' />
         <PersonForm
           addNewPerson={addNewPerson}
           newName={newName}
@@ -75,7 +71,7 @@ const App = () => {
         />
       </div>
       <div>
-        <Heading heading="Numbers" />
+        <Heading heading='Numbers' />
         <ContactListing list={filteredPeople} />
       </div>
     </div>

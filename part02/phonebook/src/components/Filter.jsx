@@ -1,8 +1,12 @@
-const Filter = ({ handleFilterChange }) => {
+const Filter = ({ filter, setFilter }) => {
   return (
-    <>
-      <input onChange={handleFilterChange} />
-    </>
+    <label>
+      Filter:{' '}
+      <input
+        value={filter}
+        onChange={(event) => setFilter(event.target.value)}
+      />
+    </label>
   );
 };
 
