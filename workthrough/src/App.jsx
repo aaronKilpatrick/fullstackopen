@@ -8,17 +8,13 @@ const App = () => {
   const [showAll, setShowAll] = useState(true);
 
   useEffect(() => {
-    console.log('effect');
     //prettier-ignore
     axios
     .get('http://localhost:3001/notes')
     .then(response => {
-        console.log('promise fulfilled');
         setNotes(response.data);
       });
   }, []);
-
-  console.log('render', notes.length, 'notes');
 
   const notesToShow = showAll ? notes : notes.filter((note) => note.important);
 
@@ -27,14 +23,33 @@ const App = () => {
     const note = {
       content: newNote,
       important: Math.random() < 0.5,
-      id: notes.length + 1,
     };
-    setNotes(notes.concat(note));
-    setNewNote('');
+
+    //prettier-ignore
+    axios
+      .post('http://localhost:3001/notes', note)
+      .then((response) => {
+        console.log(response.data);
+        setNotes(notes.concat(note));
+        setNewNote('');
+      });
   };
 
   const handleNoteChange = (event) => {
     setNewNote(event.target.value);
+  };
+
+  const toggleImportanceOf = (id) => {
+    const url = `http://localhost:3001/notes/${id}`;
+    const note = notes.find((note) => note.id === id);
+    const changedNote = { ...note, important: !note.important };
+
+    //prettier-ignore
+    axios
+      .put(url, changedNote)
+      .then(response => {
+        setNotes(notes.map(note => note.id !== id ? note : response.data));
+      });
   };
 
   return (
@@ -49,7 +64,8 @@ const App = () => {
         {notesToShow.map((note) => (
           <Note
             key={note.id}
-            content={note.content}
+            note={note}
+            toggleImportance={() => toggleImportanceOf(note.id)}
           />
         ))}
       </ul>
