@@ -6,14 +6,14 @@ Full Stack Open - Deep dive into modern web development
 
 ### Part 0 - Fundamentals of Web Apps
 
-- [ ] Section A - General info
-- [ ] Section B - Fundamentals of Web apps
-- [ ] Exercise 0.1
-- [ ] Exercise 0.2
-- [ ] Exercise 0.3
-- [ ] Exercise 0.4
-- [ ] Exercise 0.5
-- [ ] Exercise 0.6
+- [x] Section A - General info
+- [x] Section B - Fundamentals of Web apps
+- [x] Exercise 0.1
+- [x] Exercise 0.2
+- [x] Exercise 0.3
+- [x] Exercise 0.4
+- [x] Exercise 0.5
+- [x] Exercise 0.6
 
 ### Part 1 - Introduction to React
 
