@@ -38,32 +38,32 @@ Full Stack Open - Deep dive into modern web development
 
 ### Part 2 - Communicating with server
 
-- [ ] Section A - Part a Rendering a collection, modules
-  - [ ] console.log
-  - [ ] Protip: Visual Studio Code snippets
-  - [ ] JavaScript Arrays
-  - [ ] Event Handlers Revisited
-  - [ ] Rendering Collections
-  - [ ] Key-attribute
-  - [ ] Map
-  - [ ] Anti-pattern: Array Indexes as Keys
-  - [ ] Refactoring Modules
-  - [ ] When the Application Breaks
-  - [ ] Web developer's oath
-- [ ] Section B - Forms
-  - [ ] Saving the notes in the component state
-  - [ ] Controlled component
-  - [ ] Filtering Displayed Elements
-- [ ] Section C - Getting data from the server
-  - [ ] The browser as a runtime environment
-  - [ ] npm
-  - [ ] Axios and promises
-  - [ ] Effect-hooks
-  - [ ] The development runtime environment
+- [x] Section A - Part a Rendering a collection, modules
+  - [x] console.log
+  - [x] Protip: Visual Studio Code snippets
+  - [x] JavaScript Arrays
+  - [x] Event Handlers Revisited
+  - [x] Rendering Collections
+  - [x] Key-attribute
+  - [x] Map
+  - [x] Anti-pattern: Array Indexes as Keys
+  - [x] Refactoring Modules
+  - [x] When the Application Breaks
+  - [x] Web developer's oath
+- [x] Section B - Forms
+  - [x] Saving the notes in the component state
+  - [x] Controlled component
+  - [x] Filtering Displayed Elements
+- [x] Section C - Getting data from the server
+  - [x] The browser as a runtime environment
+  - [x] npm
+  - [x] Axios and promises
+  - [x] Effect-hooks
+  - [x] The development runtime environment
 - [ ] Section D - Altering data in server
-  - [ ] REST
-  - [ ] Sending Data to the Server
-  - [ ] Changing the Importance of Notes
+  - [x] REST
+  - [x] Sending Data to the Server
+  - [x] Changing the Importance of Notes
   - [ ] Extracting Communication with the Backend into a Separate Module
   - [ ] Cleaner Syntax for Defining Object Literals
   - [ ] Promises and Errors
@@ -72,17 +72,17 @@ Full Stack Open - Deep dive into modern web development
   - [ ] Improved error message
   - [ ] Inline styles
   - [ ] Couple of important remarks
-- [ ] Exercise 2.1
-- [ ] Exercise 2.2
-- [ ] Exercise 2.3
-- [ ] Exercise 2.4
-- [ ] Exercise 2.5
-- [ ] Exercise 2.6
-- [ ] Exercise 2.7
-- [ ] Exercise 2.8
-- [ ] Exercise 2.9
-- [ ] Exercise 2.10
-- [ ] Exercise 2.11
+- [x] Exercise 2.1
+- [x] Exercise 2.2
+- [x] Exercise 2.3
+- [x] Exercise 2.4
+- [x] Exercise 2.5
+- [x] Exercise 2.6
+- [x] Exercise 2.7
+- [x] Exercise 2.8
+- [x] Exercise 2.9
+- [x] Exercise 2.10
+- [x] Exercise 2.11
 - [ ] Exercise 2.12
 - [ ] Exercise 2.13
 - [ ] Exercise 2.14
