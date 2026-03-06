@@ -60,18 +60,18 @@ Full Stack Open - Deep dive into modern web development
   - [x] Axios and promises
   - [x] Effect-hooks
   - [x] The development runtime environment
-- [ ] Section D - Altering data in server
+- [x] Section D - Altering data in server
   - [x] REST
   - [x] Sending Data to the Server
   - [x] Changing the Importance of Notes
-  - [ ] Extracting Communication with the Backend into a Separate Module
-  - [ ] Cleaner Syntax for Defining Object Literals
-  - [ ] Promises and Errors
-  - [ ] Full stack developer's oath
-- [ ] Section E - Adding styles to React app
-  - [ ] Improved error message
-  - [ ] Inline styles
-  - [ ] Couple of important remarks
+  - [x] Extracting Communication with the Backend into a Separate Module
+  - [x] Cleaner Syntax for Defining Object Literals
+  - [x] Promises and Errors
+  - [x] Full stack developer's oath
+- [x] Section E - Adding styles to React app
+  - [x] Improved error message
+  - [x] Inline styles
+  - [x] Couple of important remarks
 - [x] Exercise 2.1
 - [x] Exercise 2.2
 - [x] Exercise 2.3
@@ -83,13 +83,81 @@ Full Stack Open - Deep dive into modern web development
 - [x] Exercise 2.9
 - [x] Exercise 2.10
 - [x] Exercise 2.11
-- [ ] Exercise 2.12
-- [ ] Exercise 2.13
-- [ ] Exercise 2.14
-- [ ] Exercise 2.15
-- [ ] Exercise 2.16
-- [ ] Exercise 2.17
-- [ ] Exercise 2.18
-- [ ] Exercise 2.19
-- [ ] Exercise 2.20
+- [x] Exercise 2.12
+- [x] Exercise 2.13
+- [x] Exercise 2.14
+- [x] Exercise 2.15
+- [x] Exercise 2.16
+- [x] Exercise 2.17
+- [x] Exercise 2.18
+- [x] Exercise 2.19
+- [x] Exercise 2.20
+- [x] Side Projects to Solidify Knowledge
 
+### Part 3 - Programming a server with Node.JS and Express
+
+- [ ] Section A - Node.Js and Express
+  - [ ] Simple web server
+  - [ ] Express
+  - [ ] Web and Express
+  - [ ] Automatic Change Tracking
+  - [ ] REST
+  - [ ] Fetching a single resource
+  - [ ] Deleting resources
+  - [ ] Postman
+  - [ ] The Visual Studio Code REST client
+  - [ ] The WebStorm HTTP Client
+  - [ ] Receiving data
+  - [ ] Exercise 3.1.
+  - [ ] Exercise 3.2
+  - [ ] Exercise 3.3
+  - [ ] Exercise 3.4
+  - [ ] Exercise 3.5
+  - [ ] Exercise 3.6
+  - [ ] About HTTP request types
+  - [ ] Middleware
+  - [ ] Exercise 3.7
+  - [ ] Exercise 3.8
+- [ ] Section B - Deploying app to Internet
+  - [ ] Same origin policy and CORS
+  - [ ] Application to the Internet
+  - [ ] Frontend production build
+  - [ ] Serving static files from the backend
+  - [ ] The whole app to the internet
+  - [ ] Streamlining deploying of the frontend
+  - [ ] Proxy
+  - [ ] Exercise 3.9
+  - [ ] Exercise 3.10
+  - [ ] Exercise 3.11
+- [ ] Section C - Saving data to MongoDB
+  - [ ] Debugging Node applications
+  - [ ] MongoDB
+  - [ ] Schema
+  - [ ] Creating and saving objects
+  - [ ] Fetching objects from the database
+  - [ ] Exercise 3.12
+  - [ ] Connecting the backend to a database
+  - [ ] Moving db configuration to its own module
+  - [ ] Defining environment variables using the dotenv library
+  - [ ] Using database in route handlers
+  - [ ] Verifying frontend and backend integration
+  - [ ] A true full stack developer's oath
+  - [ ] Exercise 3.13
+  - [ ] Exercise 3.14
+  - [ ] Error handling
+  - [ ] Moving error handling into middleware
+  - [ ] The order of middleware loading
+  - [ ] Other operations
+  - [ ] Exercise 3.15
+  - [ ] Exercise 3.16
+  - [ ] Exercise 3.17
+  - [ ] Exercise 3.18
+- [ ] Section D - Validation and ESLint
+  - [ ] Deploying the database backend to production
+  - [ ] Exercise 3.19 
+  - [ ] Exercise 3.21
+  - [ ] Lint
+  - [ ] Formatting the Configuration File
+  - [ ] Running the Linter
+  - [ ] Adding More Style Rules
+  - [ ] Exercise 3.22
