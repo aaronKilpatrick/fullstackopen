@@ -97,8 +97,8 @@ Full Stack Open - Deep dive into modern web development
 ### Part 3 - Programming a server with Node.JS and Express
 
 - [ ] Section A - Node.Js and Express
-  - [ ] Simple web server
-  - [ ] Express
+  - [x] Simple web server
+  - [x] Express
   - [ ] Web and Express
   - [ ] Automatic Change Tracking
   - [ ] REST
