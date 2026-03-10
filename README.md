@@ -99,15 +99,15 @@ Full Stack Open - Deep dive into modern web development
 - [ ] Section A - Node.Js and Express
   - [x] Simple web server
   - [x] Express
-  - [ ] Web and Express
-  - [ ] Automatic Change Tracking
-  - [ ] REST
-  - [ ] Fetching a single resource
-  - [ ] Deleting resources
-  - [ ] Postman
+  - [x] Web and Express
+  - [x] Automatic Change Tracking
+  - [x] REST
+  - [x] Fetching a single resource
+  - [x] Deleting resources
+  - [x] Postman
   - [ ] The Visual Studio Code REST client
-  - [ ] The WebStorm HTTP Client
-  - [ ] Receiving data
+  - [x] The WebStorm HTTP Client
+  - [x] Receiving data
   - [ ] Exercise 3.1.
   - [ ] Exercise 3.2
   - [ ] Exercise 3.3
