@@ -110,10 +110,10 @@ Full Stack Open - Deep dive into modern web development
   - [x] Receiving data
   - [x] Exercise 3.1.
   - [x] Exercise 3.2
-  - [ ] Exercise 3.3
-  - [ ] Exercise 3.4
-  - [ ] Exercise 3.5
-  - [ ] Exercise 3.6
+  - [x] Exercise 3.3
+  - [x] Exercise 3.4
+  - [x] Exercise 3.5
+  - [x] Exercise 3.6
   - [ ] About HTTP request types
   - [ ] Middleware
   - [ ] Exercise 3.7
@@ -154,10 +154,11 @@ Full Stack Open - Deep dive into modern web development
   - [ ] Exercise 3.18
 - [ ] Section D - Validation and ESLint
   - [ ] Deploying the database backend to production
-  - [ ] Exercise 3.19 
+  - [ ] Exercise 3.19
   - [ ] Exercise 3.21
   - [ ] Lint
   - [ ] Formatting the Configuration File
   - [ ] Running the Linter
   - [ ] Adding More Style Rules
   - [ ] Exercise 3.22
+
