@@ -118,17 +118,17 @@ Full Stack Open - Deep dive into modern web development
   - [x] Middleware
   - [x] Exercise 3.7
   - [x] Exercise 3.8
-- [ ] Section B - Deploying app to Internet
-  - [ ] Same origin policy and CORS
-  - [ ] Application to the Internet
-  - [ ] Frontend production build
-  - [ ] Serving static files from the backend
-  - [ ] The whole app to the internet
-  - [ ] Streamlining deploying of the frontend
-  - [ ] Proxy
-  - [ ] Exercise 3.9
-  - [ ] Exercise 3.10
-  - [ ] Exercise 3.11
+- [x] Section B - Deploying app to Internet
+  - [x] Same origin policy and CORS
+  - [x] Application to the Internet
+  - [x] Frontend production build
+  - [x] Serving static files from the backend
+  - [x] The whole app to the internet
+  - [x] Streamlining deploying of the frontend
+  - [x] Proxy
+  - [x] Exercise 3.9
+  - [x] Exercise 3.10
+  - [x] Exercise 3.11
 - [ ] Section C - Saving data to MongoDB
   - [ ] Debugging Node applications
   - [ ] MongoDB
