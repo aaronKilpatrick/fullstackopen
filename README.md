@@ -130,7 +130,7 @@ Full Stack Open - Deep dive into modern web development
   - [x] Exercise 3.10
   - [x] Exercise 3.11
 - [ ] Section C - Saving data to MongoDB
-  - [ ] Debugging Node applications
+  - [x] Debugging Node applications
   - [ ] MongoDB
   - [ ] Schema
   - [ ] Creating and saving objects
