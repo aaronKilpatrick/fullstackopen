@@ -1,27 +1,7 @@
+require('dotenv').config();
 const express = require('express');
-const mongoose = require('mongoose');
+const Note = require('./models/note');
 const app = express();
-
-const password = process.argv[2];
-
-const url = `mongodb+srv://aaron:${password}@cluster0.yci9bz6.mongodb.net/noteApp?retryWrites=true&w=majority&appName=Cluster0`;
-
-mongoose.set('strictQuery', false);
-mongoose.connect(url, { family: 4 });
-
-const noteSchema = new mongoose.Schema({
-  content: String,
-  important: Boolean,
-});
-noteSchema.set('toJSON', {
-  transform: (document, returnedObject) => {
-    returnedObject.id = returnedObject._id.toString();
-    delete returnedObject._id;
-    delete returnedObject.__v;
-  },
-});
-
-const Note = mongoose.model('note', noteSchema);
 
 const requestLogger = (req, res, next) => {
   console.log('Method:', req.method);
