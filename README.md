@@ -97,15 +97,15 @@ Full Stack Open - Deep dive into modern web development
 ### Part 3 - Programming a server with Node.JS and Express
 
 - [ ] Section A - Node.Js and Express
-  - [ ] Simple web server
-  - [ ] Express
-  - [ ] Web and Express
-  - [ ] Automatic Change Tracking
-  - [ ] REST
-  - [ ] Fetching a single resource
-  - [ ] Deleting resources
-  - [ ] Postman
-  - [ ] The Visual Studio Code REST client
+  - [x] Simple web server
+  - [x] Express
+  - [x] Web and Express
+  - [x] Automatic Change Tracking
+  - [x] REST
+  - [x] Fetching a single resource
+  - [x] Deleting resources
+  - [x] Postman
+  - [x] The Visual Studio Code REST client
   - [ ] The WebStorm HTTP Client
   - [ ] Receiving data
   - [ ] Exercise 3.1.
@@ -154,10 +154,11 @@ Full Stack Open - Deep dive into modern web development
   - [ ] Exercise 3.18
 - [ ] Section D - Validation and ESLint
   - [ ] Deploying the database backend to production
-  - [ ] Exercise 3.19 
+  - [ ] Exercise 3.19
   - [ ] Exercise 3.21
   - [ ] Lint
   - [ ] Formatting the Configuration File
   - [ ] Running the Linter
   - [ ] Adding More Style Rules
   - [ ] Exercise 3.22
+
