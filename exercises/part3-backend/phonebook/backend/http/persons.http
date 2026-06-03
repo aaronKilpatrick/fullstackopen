@@ -1,0 +1,27 @@
+@baseUrl = http://localhost:3001 
+
+### get all persons
+# @name getPersons
+GET {{ baseUrl }}/api/persons HTTP/1.1
+
+### add person
+# @name addPerson
+POST {{ baseUrl }}/api/persons HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "John",
+  "number": "2398409834"
+}
+
+### Get a single person 
+# @name getPerson
+GET {{ baseUrl }}/api/persons/3 HTTP/1.1
+
+### Get a single person - can't find
+# @name getPersonFailed
+GET {{ baseUrl }}/api/persons/700 HTTP/1.1
+
+### Delete an entry
+# @name deletePerson
+DELETE {{ baseUrl }}/api/persons/2 HTTP/1.1
