@@ -29,13 +29,10 @@ const requestLogger = (req, res, next) => {
   next();
 };
 
+app.use(express.static("dist"));
 app.use(cors());
 app.use(express.json());
 app.use(requestLogger);
-
-app.get("/", (req, res) => {
-  res.send("<h1>Hello world!</h1>");
-});
 
 app.get("/api/notes", (req, res) => {
   res.json(notes);
