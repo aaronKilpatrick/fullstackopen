@@ -1,18 +1,18 @@
-import { useState, useEffect } from 'react';
-import personServices from './services/persons';
-import Filter from './components/Filter';
-import Notification from './services/Notification';
-import PersonForm from './components/PersonForm';
-import Persons from './components/Person';
+import { useState, useEffect } from "react";
+import personServices from "./services/persons";
+import Filter from "./components/Filter";
+import Notification from "./services/Notification";
+import PersonForm from "./components/PersonForm";
+import Persons from "./components/Person";
 
 const App = () => {
   const [persons, setPersons] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [newName, setNewName] = useState('');
-  const [newNumber, setNewNumber] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
+  const [newName, setNewName] = useState("");
+  const [newNumber, setNewNumber] = useState("");
   const [notification, setNotification] = useState({
     message: null,
-    className: 'success',
+    className: "success",
   });
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const App = () => {
         .catch(() => {
           setNotification({
             message: `${existingPerson.name} has already been deleted`,
-            className: 'error',
+            className: "error",
           });
           setTimeout(() => {
             setNotification({ ...notification, message: null });
@@ -63,13 +63,13 @@ const App = () => {
         setPersons(persons.concat(returnedPerson));
         setNotification({
           message: `Added: ${returnedPerson.name}`,
-          className: 'success',
+          className: "success",
         });
         setTimeout(() => {
           setNotification({ ...notification, message: null });
         }, 3000);
-        setNewName('');
-        setNewNumber('');
+        setNewName("");
+        setNewNumber("");
       });
       return;
     }
@@ -93,8 +93,8 @@ const App = () => {
     if (window.confirm(`Delete ${person.name}?`))
       personServices
         .deleteEntry(person.id)
-        .then((deletedPerson) => {
-          setPersons(persons.filter((p) => p.id !== deletedPerson.id));
+        .then(() => {
+          setPersons(persons.filter((p) => p.id !== person.id));
         })
         .catch((error) => {
           console.log(error.response.status);
